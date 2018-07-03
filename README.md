@@ -117,6 +117,7 @@ python run.py --agt 9 --usr 1 --max_turn 40
 	      --run_mode 3
 ```
 ## Experiments
+To run the scripts, move the two bash files under src folder. 
 1. Bash_figure_4.sh is the script for figure 4.
 2. Bash_figure_5.sh is the script for figure 5. 
 
