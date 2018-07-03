@@ -1,0 +1,16 @@
+city
+closing
+date
+distanceconstraints
+greeting
+moviename
+numberofpeople
+taskcomplete
+price
+starttime
+state
+theater
+theater_chain
+video_format
+zip
+ticket
