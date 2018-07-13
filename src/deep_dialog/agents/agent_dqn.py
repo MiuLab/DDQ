@@ -380,8 +380,8 @@ class AgentDQN(Agent):
     def save(self, filename):
         torch.save(self.dqn.state_dict(), filename)
 
-    def load(self, params):
-        self.dqn.load_state_dict(torch.load(params['trained_model_path']))
+    def load(self, filename):
+        self.dqn.load_state_dict(torch.load(filename))
 
     def reset_dqn_target(self):
         self.target_dqn.load_state_dict(self.dqn.state_dict())
