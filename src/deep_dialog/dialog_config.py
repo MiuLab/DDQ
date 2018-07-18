@@ -120,6 +120,7 @@ feasible_actions_users = [
     {'diaact': "thanks", 'inform_slots': {}, 'request_slots': {}},
     {'diaact': "deny", 'inform_slots': {}, 'request_slots': {}},
     {'diaact': "closing", 'inform_slots': {}, 'request_slots': {}},
+    {'diaact': "confirm_answer", 'inform_slots': {}, 'request_slots': {}}
 ]
 
 # for slot in sys_inform_slots_for_user:
