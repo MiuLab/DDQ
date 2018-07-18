@@ -284,6 +284,12 @@ class ModelBasedSimulator(UserSimulator):
         for i in act_slot_response['inform_slots'].keys():
             act_slot_response['inform_slots'][i] = 'PLACEHOLDER'
 
+        # rule
+        if act_slot_response['diaact'] == 'request': act_slot_response['inform_slots'] = {}
+        if act_slot_response['diaact'] in ['thanks', 'deny', 'closing']: 
+            act_slot_response['inform_slots'] = {}
+            act_slot_response['request_slots'] = {}
+            
         for (i, action) in enumerate(self.feasible_actions_users):
             if act_slot_response == action:
                 return i

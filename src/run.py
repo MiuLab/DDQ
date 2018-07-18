@@ -264,6 +264,7 @@ nlu_model.load_nlu_model(nlu_model_path)
 
 agent.set_nlu_model(nlu_model)
 user_sim.set_nlu_model(nlu_model)
+world_model.set_nlu_model(nlu_model)
 
 ################################################################################
 # Dialog Manager
