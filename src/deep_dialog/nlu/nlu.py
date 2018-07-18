@@ -168,6 +168,8 @@ class nlu:
         
             # rule for request
             if len(diaact['request_slots'])>0: diaact['diaact'] = 'request'
+            
+            if len(diaact['request_slots'])==0 and diaact['diaact'] == 'request': diaact['diaact'] = 'inform'
     
     
     
